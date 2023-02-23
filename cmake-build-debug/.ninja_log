@@ -1,0 +1,14 @@
+# ninja log v5
+2	52	6982482306222767	CMakeFiles/main.dir/static_list.c.obj	16ca45b99b16e921
+1	68	6982483899490215	CMakeFiles/main.dir/main.c.obj	2468d43db687b91f
+1	44	6982483693668411	CMakeFiles/test_lists.dir/dynamic_list.c.obj	744ee60d8fa536b4
+69	152	6982483900282259	D:/Programming2/Plantilla-Template_P1/P1/bin/main.exe	27bea2619124662e
+0	48	6982482384172756	CMakeFiles/test_lists.dir/static_list.c.obj	15c37244d055fe95
+6	63	6982483129120124	CMakeFiles/main.dir/dynamic_list.c.obj	6e53b05fb941985c
+2	46	6982492028265721	CMakeFiles/main.dir/static_list.c.obj	16ca45b99b16e921
+5	70	6982492028511018	CMakeFiles/main.dir/main.c.obj	c4efb212bab3e7af
+70	142	6982492029184800	D:/Programming2/Plantilla-Template_P1/P1/bin/main.exe	3a4e9f3c9eef4c93
+0	47	6982492083378171	CMakeFiles/test_lists.dir/static_list.c.obj	15c37244d055fe95
+1	54	6982499300357181	CMakeFiles/main.dir/static_list.c.obj	16ca45b99b16e921
+5	78	6982499300593187	CMakeFiles/main.dir/main.c.obj	c4efb212bab3e7af
+78	154	6982499301312370	D:/Programming2/Plantilla-Template_P1/P1/bin/main.exe	3a4e9f3c9eef4c93

@@ -1,0 +1,4 @@
+D:/Programming2/Plantilla-Template_P1/P1/cmake-build-debug/CMakeFiles/main.dir
+D:/Programming2/Plantilla-Template_P1/P1/cmake-build-debug/CMakeFiles/test_lists.dir
+D:/Programming2/Plantilla-Template_P1/P1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programming2/Plantilla-Template_P1/P1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
