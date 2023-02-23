@@ -10,16 +10,17 @@
 #define DYNAMIC_LIST_H
 
 #include "types.h"
+#include <stdlib.h>
 
-#define LNULL -1
 #define MAX_LENGTH 25
+#define LNULL 0
 
 typedef int tPosL;
-typedef struct tListL
+typedef struct tList
 {
     tItemL item;
-    struct tListL* next;
-}tListL;
+    struct tList* next;
+}* tListL;
 /* Write your code here... */
 tListL createEmptyList(tListL);
 bool isEmptyList(tListL);

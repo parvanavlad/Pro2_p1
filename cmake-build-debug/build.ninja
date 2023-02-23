@@ -50,15 +50,15 @@ cmake_ninja_workdir = D$:/Programming2/Plantilla-Template_P1/P1/cmake-build-debu
 build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_Debug D$:/Programming2/Plantilla-Template_P1/P1/main.c || cmake_object_order_depends_target_main
-  DEFINES = -DINPUT_FILE=\"new.txt\" -DSTATIC_LIST
+  DEFINES = -DDYNAMIC_LIST -DINPUT_FILE=\"new.txt\"
   DEP_FILE = CMakeFiles\main.dir\main.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir
 
-build CMakeFiles/main.dir/static_list.c.obj: C_COMPILER__main_Debug D$:/Programming2/Plantilla-Template_P1/P1/static_list.c || cmake_object_order_depends_target_main
-  DEFINES = -DINPUT_FILE=\"new.txt\" -DSTATIC_LIST
-  DEP_FILE = CMakeFiles\main.dir\static_list.c.obj.d
+build CMakeFiles/main.dir/dynamic_list.c.obj: C_COMPILER__main_Debug D$:/Programming2/Plantilla-Template_P1/P1/dynamic_list.c || cmake_object_order_depends_target_main
+  DEFINES = -DDYNAMIC_LIST -DINPUT_FILE=\"new.txt\"
+  DEP_FILE = CMakeFiles\main.dir\dynamic_list.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles\main.dir
   OBJECT_FILE_DIR = CMakeFiles\main.dir
@@ -71,7 +71,7 @@ build CMakeFiles/main.dir/static_list.c.obj: C_COMPILER__main_Debug D$:/Programm
 #############################################
 # Link the executable D:\Programming2\Plantilla-Template_P1\P1\bin\main.exe
 
-build D$:/Programming2/Plantilla-Template_P1/P1/bin/main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.obj CMakeFiles/main.dir/static_list.c.obj
+build D$:/Programming2/Plantilla-Template_P1/P1/bin/main.exe: C_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.c.obj CMakeFiles/main.dir/dynamic_list.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\main.dir
@@ -91,15 +91,15 @@ build D$:/Programming2/Plantilla-Template_P1/P1/bin/main.exe: C_EXECUTABLE_LINKE
 build cmake_object_order_depends_target_test_lists: phony || CMakeFiles/test_lists.dir
 
 build CMakeFiles/test_lists.dir/test.c.obj: C_COMPILER__test_lists_Debug D$:/Programming2/Plantilla-Template_P1/P1/test.c || cmake_object_order_depends_target_test_lists
-  DEFINES = -DINPUT_FILE=\"new.txt\" -DSTATIC_LIST
+  DEFINES = -DDYNAMIC_LIST -DINPUT_FILE=\"new.txt\"
   DEP_FILE = CMakeFiles\test_lists.dir\test.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles\test_lists.dir
   OBJECT_FILE_DIR = CMakeFiles\test_lists.dir
 
-build CMakeFiles/test_lists.dir/static_list.c.obj: C_COMPILER__test_lists_Debug D$:/Programming2/Plantilla-Template_P1/P1/static_list.c || cmake_object_order_depends_target_test_lists
-  DEFINES = -DINPUT_FILE=\"new.txt\" -DSTATIC_LIST
-  DEP_FILE = CMakeFiles\test_lists.dir\static_list.c.obj.d
+build CMakeFiles/test_lists.dir/dynamic_list.c.obj: C_COMPILER__test_lists_Debug D$:/Programming2/Plantilla-Template_P1/P1/dynamic_list.c || cmake_object_order_depends_target_test_lists
+  DEFINES = -DDYNAMIC_LIST -DINPUT_FILE=\"new.txt\"
+  DEP_FILE = CMakeFiles\test_lists.dir\dynamic_list.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles\test_lists.dir
   OBJECT_FILE_DIR = CMakeFiles\test_lists.dir
@@ -112,7 +112,7 @@ build CMakeFiles/test_lists.dir/static_list.c.obj: C_COMPILER__test_lists_Debug 
 #############################################
 # Link the executable D:\Programming2\Plantilla-Template_P1\P1\bin\test_lists.exe
 
-build D$:/Programming2/Plantilla-Template_P1/P1/bin/test_lists.exe: C_EXECUTABLE_LINKER__test_lists_Debug CMakeFiles/test_lists.dir/test.c.obj CMakeFiles/test_lists.dir/static_list.c.obj
+build D$:/Programming2/Plantilla-Template_P1/P1/bin/test_lists.exe: C_EXECUTABLE_LINKER__test_lists_Debug CMakeFiles/test_lists.dir/test.c.obj CMakeFiles/test_lists.dir/dynamic_list.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\test_lists.dir

@@ -12,7 +12,7 @@
 
 #include "types.h"
 
-#define LNULL -1
+#define LNULL 0
 #define MAX_LENGTH 25
 
 typedef int tPosL;

@@ -8,7 +8,7 @@
 #include "static_list.h"
 #endif
 
-void print_list(tList list) {
+void print_list(tListL list) {
     tPosL pos;
     tItemL item;
 
@@ -25,14 +25,14 @@ void print_list(tList list) {
 }
 
 int main() {
-    tList list;
+    struct tList list;
     tPosL pos;
     tItemL item1, item2;
 
 
     /* create */
     createEmptyList(&list);
-    print_list(list);
+    print_list(&list);
 
     /* insert */
     strcpy(item1.participantName, "country3");
@@ -40,7 +40,7 @@ int main() {
     item1.EUParticipant = true;
 
     insertItem(item1, LNULL, &list);
-    print_list(list);
+    print_list(&list);
 
     strcpy(item1.participantName, "country1");
     insertItem(item1, first(list), &list);
