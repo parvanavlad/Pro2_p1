@@ -10,9 +10,10 @@
 #include "dynamic_list.h"
 #include <string.h>
 
-tListL createEmptyList(tListL root)
+struct tList* createEmptyList(struct tList* root)
 {
-    root=NULL;
+    tListL* rootP=&root;
+    *rootP=NULL;
     return root;
 }
 bool isEmptyList(tListL root)
@@ -56,10 +57,10 @@ tPosL previous(tPosL pos,tListL root)
         return pos-1;
 }
 
-bool insertItem (tItemL insIt, tPosL pos, tListL root)
+bool insertItem (tItemL insIt, tPosL pos, tListL* root)
 {
     bool status=false;
-    tListL iter=root;
+    tListL iter=*root;
     tListL p=NULL;
     p=malloc(sizeof(tListL));
     if(p==NULL)
@@ -73,10 +74,15 @@ bool insertItem (tItemL insIt, tPosL pos, tListL root)
         if(iter) {
             while (iter->next)
                 iter = iter->next;
+            iter->next=p;
+            p->next=NULL;
+            status=true;
         }
-        iter->next=p;
-        p->next=NULL;
-        status=true;
+        else
+        {
+            p->next=NULL;
+            *root=p;
+        }
     }
     else
     {

@@ -25,25 +25,28 @@ void print_list(tListL list) {
 }
 
 int main() {
-    struct tList list;
+    struct tList* list;
     tPosL pos;
     tItemL item1, item2;
 
 
     /* create */
-    createEmptyList(&list);
-    print_list(&list);
+    createEmptyList(list);
+    print_list(list);
 
     /* insert */
+
     strcpy(item1.participantName, "country3");
     item1.numVotes = 0;
     item1.EUParticipant = true;
 
     insertItem(item1, LNULL, &list);
-    print_list(&list);
+    print_list(list);
+
+    /*
 
     strcpy(item1.participantName, "country1");
-    insertItem(item1, first(list), &list);
+    insertItem(item1, first(list), list);
     print_list(list);
 
     strcpy(item1.participantName, "country5");
@@ -51,15 +54,16 @@ int main() {
     print_list(list);
 
     strcpy(item1.participantName, "country2");
-    insertItem(item1, next(first(list),list), &list);
+    insertItem(item1, next(first(list),list), list);
     print_list(list);
 
     strcpy(item1.participantName, "country4");
-    insertItem(item1, last(list), &list);
+    insertItem(item1, last(list), list);
     print_list(list);
 
 
     /* find */
+    /*
     pos = findItem("country33", list);
     if (pos == LNULL) {
         printf("country33 Not found\n");
@@ -69,16 +73,19 @@ int main() {
     pos = findItem("country3", list);
     item2 = getItem(pos, list);
     printf("%s\n", item2.participantName);
-
+    */
 
     /* update */
+    /*
     item2 = getItem(pos, list);
     item2.numVotes = 2;
     updateItem(item2,pos,&list);
     printf("%s\n", item2.participantName);
     print_list(list);
+    */
 
     /* remove */
+    /*
     deleteAtPosition(next(first(list),list), &list);
     print_list(list);
 
@@ -96,4 +103,5 @@ int main() {
 
     insertItem(item1, LNULL, &list);
     print_list(list);
+    */
 }
